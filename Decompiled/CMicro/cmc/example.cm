@@ -1,0 +1,41 @@
+﻿/* 
+string lessthanzero(int value) {
+	if(value > 0)
+	{
+		return readln();
+	}
+		
+	return "null";
+} 
+*/
+
+void main(string[] args) {	
+	print("Tal1: ");	
+	double tal1 = readdouble();
+	
+	print("Tal2: ");
+	double tal2 = readdouble();
+	
+	print("Result: ");
+	double result = Pow(tal1, tal2);
+	
+	println(double_to_str(result));
+	
+	global var object = box_int(12);
+	object = typeof(object);
+	
+	string text = object_to_str(object);
+	
+	println(text);
+	println(str_reverse(text));
+	
+	char[] schar = str_to_chararray(text);
+	char ch = schar[0];
+	
+	println(char_to_str(ch));
+	
+	
+	var array = { 100, 200 };
+	
+	readln();
+}

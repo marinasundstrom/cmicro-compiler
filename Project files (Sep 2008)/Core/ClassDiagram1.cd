@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="Base interfaces of all tokens">
+    <Position X="0.667" Y="2.635" Height="0.263" Width="1.731" />
+  </Comment>
+  <Comment CommentText="Base class of all tokens">
+    <Position X="48.312" Y="0.604" Height="0.263" Width="1.46" />
+  </Comment>
+  <Class Name="CSharp.Compiler.Ast.AstRoot" Collapsed="true">
+    <Position X="10.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\AstRoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.PublicAttribute" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\Attributes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.PrivateAttribute" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\Attributes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.StaticAttribute" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\Attributes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.AbstractAttribute" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\Attributes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.ConstantAttribute" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\Attributes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.ClassDeclaration" Collapsed="true">
+    <Position X="7.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAQQAQAAAAIIAAAEAAAAAAA=</HashCode>
+      <FileName>Ast\ClassDeclaration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.ConstructorDeclaration" Collapsed="true">
+    <Position X="10" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQQAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Ast\ConstructorDeclaration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.Declaration" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\Declaration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.EnumDeclaration" Collapsed="true">
+    <Position X="12.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Ast\EnumDeclaration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.BinaryOperation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAgAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Ast\ExpressionTree\BinaryOperation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.Expression" Collapsed="true">
+    <Position X="4.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\ExpressionTree\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.Operand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAQQgAAABAAA=</HashCode>
+      <FileName>Ast\ExpressionTree\Operand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.FieldVariableDeclaration" Collapsed="true">
+    <Position X="5.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQQAAAAAAAQAQAAAAAAAAA=</HashCode>
+      <FileName>Ast\FieldVariableDeclaration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.FunctionDeclaration" Collapsed="true">
+    <Position X="24" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAEAAA=</HashCode>
+      <FileName>Ast\FunctionDeclaration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.MethodDeclaration" Collapsed="true">
+    <Position X="3.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAgAAQQAQAAAAAAIAAAAAAEAAA=</HashCode>
+      <FileName>Ast\MethodDeclaration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.NamespaceDeclaration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Ast\NamespaceDeclaration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.Operators" Collapsed="true">
+    <Position X="20.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAAAAAAAgAAAAAAAAAAwIAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Ast\Operators.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.Program" Collapsed="true">
+    <Position X="10.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAFAAAAAAA=</HashCode>
+      <FileName>Ast\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.IType" Collapsed="true">
+    <Position X="4.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\Type.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.Type" Collapsed="true">
+    <Position X="2.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAIQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\Type.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.ArrayType" Collapsed="true">
+    <Position X="4.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAIIAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Ast\Type.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.GenericType" Collapsed="true">
+    <Position X="7" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Ast\Type.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Ast.VariableDeclaration" Collapsed="true">
+    <Position X="1" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIQAAAAAABAQAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\VariableDeclaration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.CodeGenerator" Collapsed="true">
+    <Position X="20.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAgQCAAAAAAAAABAAACAAIAAAAAAAAAAAACAA=</HashCode>
+      <FileName>CodeGenerator\CodeGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.ParseError" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAEAAAAAAAAAAgAAAAIAAAAAAABAAA=</HashCode>
+      <FileName>Parser\ErrorHandling\ParseError.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.ParseError2" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAEAAAAAAAAAAgAAAAIAAAAAAABACE=</HashCode>
+      <FileName>Parser\ErrorHandling\ParseError.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.Parser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>igggAAiAGAAAUSaGAAEkQAQkAAACABEkARCAAIoDAA4=</HashCode>
+      <FileName>Parser\Language\IsMainMethod.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSharp.Compiler.Scanner" Collapsed="true">
+    <Position X="24" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAEAAAQAAAQEAAAAgAAAAACBACAAAACgAAARgQA=</HashCode>
+      <FileName>Scanner\Scanner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Comment" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Comment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Identifier" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Identifier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Keyword" Collapsed="true">
+    <Position X="27.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Keyword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.CharLiteral" Collapsed="true">
+    <Position X="43.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Literals\CharLiteral.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.IntLiteral" Collapsed="true">
+    <Position X="54.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Literals\IntLiteral.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.RealLiteral" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Literals\RealLiteral.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.StringLiteral" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Literals\StringLiteral.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Add" Collapsed="true">
+    <Position X="37.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Add.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.AddAssign" Collapsed="true">
+    <Position X="42.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Add.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Assign" Collapsed="true">
+    <Position X="46.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Assign.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Divide" Collapsed="true">
+    <Position X="51.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Divide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.DivideAssign" Collapsed="true">
+    <Position X="55.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Divide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Equal" Collapsed="true">
+    <Position X="60.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Equals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Greater" Collapsed="true">
+    <Position X="64.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Greater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.GreaterThanOrEqual" Collapsed="true">
+    <Position X="67" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\GreaterThanOrEqual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Less" Collapsed="true">
+    <Position X="31" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Less.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.LessThanOrEqual" Collapsed="true">
+    <Position X="35.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\LessThanOrEqual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Modulo" Collapsed="true">
+    <Position X="40" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Modulo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.ModuloAssign" Collapsed="true">
+    <Position X="44.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Modulo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Multiply" Collapsed="true">
+    <Position X="49" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Multiply.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.MultiplyAssign" Collapsed="true">
+    <Position X="53.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Multiply.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Not" Collapsed="true">
+    <Position X="58" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Not.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.NotEqual" Collapsed="true">
+    <Position X="62.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\NotEquals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Operator" Collapsed="true">
+    <Position X="50" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAEQAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Operator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Subtract" Collapsed="true">
+    <Position X="69.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Subtract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.SubtractAssign" Collapsed="true">
+    <Position X="33.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators\Subtract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Operators" Collapsed="true">
+    <Position X="22.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAACAAQAAAAAAgAADAAAAACAAACAAQQAACQRYQAA=</HashCode>
+      <FileName>Scanner\Tokens\Operators.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.BOF" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\BOF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Colon" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\Colon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Comma" Collapsed="true">
+    <Position X="29.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\Comma.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.LeftAngleBracket" Collapsed="true">
+    <Position X="34.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\LeftAngleBracket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.LeftBracket" Collapsed="true">
+    <Position X="38.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\LeftBracket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.LeftParenthesis" Collapsed="true">
+    <Position X="45.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\LeftParenthesis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Period" Collapsed="true">
+    <Position X="52.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\Period.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.RightAngleBracket" Collapsed="true">
+    <Position X="57" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\RightAngleBracket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.RightBracket" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\RightBracket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.RightParenthesis" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\RightParenthesis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Semicolon" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\Semicolon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.LeftSquareBracket" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\SquareBrackets.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.RightSquareBracket" Collapsed="true">
+    <Position X="32" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\SquareBrackets.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Star" Collapsed="true">
+    <Position X="36.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Other\Star.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.EOF" Collapsed="true">
+    <Position X="41" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Stream\EOF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.EOL" Collapsed="true">
+    <Position X="47.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Stream\EOL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Token&lt;T&gt;" Collapsed="true">
+    <Position X="50" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEGJABAAAAAQAAAAIAAAADAASQAgAAhQAABIAA=</HashCode>
+      <FileName>Scanner\Tokens\Token.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSharp.Compiler.Tokens.Tokens" Collapsed="true">
+    <Position X="18.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCIAAACABSIAAAAAgAADQAAQACAAACAAwQAQiQRYQEI=</HashCode>
+      <FileName>Scanner\Tokens\Tokens.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CSharp.Compiler.Ast.INode" Collapsed="true">
+    <Position X="17" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\ExpressionTree\INode.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.Ast.IAttribute" Collapsed="true">
+    <Position X="17" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\IAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.Ast.IClassMember" Collapsed="true">
+    <Position X="18.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\IClassMember.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.Ast.IMethodElement" Collapsed="true">
+    <Position X="22.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\IMethodElement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.Ast.INamespaceMember" Collapsed="true">
+    <Position X="24" Y="9.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\INamespaceMember.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.Ast.IProgramDeclaration" Collapsed="true">
+    <Position X="22.25" Y="10.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ast\IProgramDeclaration.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.IParseError" Collapsed="true">
+    <Position X="18.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Parser\ErrorHandling\IParseError.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.IParser" Collapsed="true">
+    <Position X="20.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgAAAAAACAAAESACAAAAAAQAAAAAAAEAABAAAIoAAAw=</HashCode>
+      <FileName>Parser\IParser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.IScanner" Collapsed="true">
+    <Position X="24" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAAAAAAAAAAAAAAAAAAAACAAABAAAAABAIA=</HashCode>
+      <FileName>Scanner\IScanner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.Tokens.IToken" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIABAAAAAAAAAAAAAAAAAACAAAAAAAAABAAA=</HashCode>
+      <FileName>Scanner\Tokens\IToken.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.Tokens.IToken&lt;T&gt;" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\IToken.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CSharp.Compiler.Tokens.ILiteral" Collapsed="true">
+    <Position X="20.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Literals\ILiteral.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CSharp.Compiler.Ast.Operator" Collapsed="true">
+    <Position X="18.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAAAAAAAgAAAAAAAAAAwIAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Ast\Operators.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CSharp.Compiler.ParseErrorCodes" Collapsed="true">
+    <Position X="22.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAQAAAAAAAABAAQAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Parser\ErrorHandling\ParseErrorCodes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CSharp.Compiler.Tokens.Kind" Collapsed="true">
+    <Position X="17" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEAAGBAAAAAAAAAAAAIAAAAAAAQQAgAAAQAAAIAA=</HashCode>
+      <FileName>Scanner\Tokens\Kind.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CSharp.Compiler.Tokens.OperatorKind" Collapsed="true">
+    <Position X="20.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAQAAQAAAAAAgAADAAAAACAAAAAAQQAACQRAAAA=</HashCode>
+      <FileName>Scanner\Tokens\Kind.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

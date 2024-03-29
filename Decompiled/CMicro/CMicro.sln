@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMicro.Core", "CMicro.Core\CMicro.Core.csproj", "{1BC5082C-B2EA-4687-84CC-149AAAD65CC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmc", "cmc\cmc.csproj", "{ABDE91D0-1233-4290-9751-2A225A60003B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BC5082C-B2EA-4687-84CC-149AAAD65CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC5082C-B2EA-4687-84CC-149AAAD65CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC5082C-B2EA-4687-84CC-149AAAD65CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC5082C-B2EA-4687-84CC-149AAAD65CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABDE91D0-1233-4290-9751-2A225A60003B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDE91D0-1233-4290-9751-2A225A60003B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDE91D0-1233-4290-9751-2A225A60003B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDE91D0-1233-4290-9751-2A225A60003B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

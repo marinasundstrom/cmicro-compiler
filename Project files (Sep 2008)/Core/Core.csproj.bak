@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E628299F-1407-4BB5-AD93-92DBDC548E8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharp</RootNamespace>
+    <AssemblyName>CSharp.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\CSharp.Core.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ast\AstRoot.cs" />
+    <Compile Include="Ast\Attributes.cs" />
+    <Compile Include="Ast\Declarations\ConstructorDeclaration.cs" />
+    <Compile Include="Ast\Declarations\IndexerDeclaration.cs" />
+    <Compile Include="Ast\Declarations\PropertyDeclaration.cs" />
+    <Compile Include="Ast\Declarations\InterfaceDeclaration.cs" />
+    <Compile Include="Ast\Declarations\DelegateDeclaration.cs" />
+    <Compile Include="Ast\Declarations\EnumDeclaration.cs" />
+    <Compile Include="Ast\ExpressionTree\BinaryOperation.cs" />
+    <Compile Include="Ast\Interfaces\IInterfaceMember.cs" />
+    <Compile Include="Ast\ExpressionTree\Operand.cs" />
+    <Compile Include="Ast\Declarations\FieldVariableDeclaration.cs" />
+    <Compile Include="Ast\Interfaces\IAttribute.cs" />
+    <Compile Include="Ast\Interfaces\IClassMember.cs" />
+    <Compile Include="Ast\Interfaces\IMethodElement.cs" />
+    <Compile Include="Ast\Interfaces\INamespaceMember.cs" />
+    <Compile Include="Ast\ExpressionTree\INode.cs" />
+    <Compile Include="Ast\Interfaces\IProgramDeclaration.cs" />
+    <Compile Include="Ast\Declarations\NamespaceDeclaration.cs" />
+    <Compile Include="Ast\Declarations\NullMember.cs" />
+    <Compile Include="Ast\Operators.cs" />
+    <Compile Include="Ast\Declarations\ClassDeclaration.cs" />
+    <Compile Include="Ast\Type.cs" />
+    <Compile Include="Ast\ExpressionTree\Expression.cs" />
+    <Compile Include="Ast\Declarations\MethodDeclaration.cs" />
+    <Compile Include="Ast\Declarations\Declaration.cs" />
+    <Compile Include="Ast\Declarations\FunctionDeclaration.cs" />
+    <Compile Include="Ast\Program.cs" />
+    <Compile Include="Ast\Declarations\VariableDeclaration.cs" />
+    <Compile Include="CodeGenerator\CodeGenerator.cs" />
+    <Compile Include="Parser\ErrorHandling\IParseError.cs" />
+    <Compile Include="Parser\ErrorHandling\ParseErrorCodes.cs" />
+    <Compile Include="Parser\ErrorHandling\Parser.ParseError.cs" />
+    <Compile Include="Parser\IParser.cs" />
+    <Compile Include="Parser\Language\Function\Parser.ParsePropertyDeclaration.cs" />
+    <Compile Include="Parser\Language\Statements\Parser.ParseImportStatement.cs" />
+    <Compile Include="Parser\Language\Parser.ParseName.cs" />
+    <Compile Include="Parser\Language\Parser.ParseType.cs" />
+    <Compile Include="Parser\Language\Function\Parser.ParseConstructor.cs" />
+    <Compile Include="Parser\Language\Parser.ParseFieldVariableDeclaration.cs" />
+    <Compile Include="Parser\Language\Types\Interface\Parser.ParseInterfaceMembers.cs" />
+    <Compile Include="Parser\Language\Types\Interface\Parser.ParseInterfaceDeclaration.cs" />
+    <Compile Include="Parser\Language\Types\Parser.ParseDelegateDeclaration.cs" />
+    <Compile Include="Parser\Language\Types\Parser.ParseNamespaceMembers.cs" />
+    <Compile Include="Parser\Language\Types\Parser.ParseNamespaceDeclaration.cs" />
+    <Compile Include="Parser\Language\Parser.NextIsAttribute.cs" />
+    <Compile Include="Parser\Language\Parser.ParseAttribute.cs" />
+    <Compile Include="Parser\Language\Parser.ParseAttributes.cs" />
+    <Compile Include="Parser\Language\Parser.ParseCases.cs" />
+    <Compile Include="Parser\Language\Function\Parser.ParseMethodAttributes.cs" />
+    <Compile Include="Parser\Language\Parser.PublicPrivateAttributes.cs" />
+    <Compile Include="Parser\Language\Parser.ParseCodeBlock.cs" />
+    <Compile Include="Parser\Language\Function\Parser.IsMainMethod.cs" />
+    <Compile Include="Parser\Language\Types\Class\Parser.ParseClassDeclaration.cs" />
+    <Compile Include="Parser\Language\Types\Class\Parser.ParseClassMembers.cs" />
+    <Compile Include="Parser\Language\Parser.ParseExpressionTree.cs" />
+    <Compile Include="Parser\Language\Types\Parser.ParseEnumDeclaration.cs" />
+    <Compile Include="Parser\Language\Function\Parser.ParseMethodArguments.cs" />
+    <Compile Include="Parser\Language\Function\Parser.ParseMethodDeclaration.cs" />
+    <Compile Include="Parser\Parser.cs" />
+    <Compile Include="Scanner\IScanner.cs" />
+    <Compile Include="Scanner\Scanner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scanner\Tokens\Comment.cs" />
+    <Compile Include="Scanner\Tokens\Identifier.cs" />
+    <Compile Include="Scanner\Tokens\IToken.cs" />
+    <Compile Include="Scanner\Tokens\Keyword.cs" />
+    <Compile Include="Scanner\Tokens\Kind.cs" />
+    <Compile Include="Scanner\Tokens\Literals\CharLiteral.cs" />
+    <Compile Include="Scanner\Tokens\Literals\ILiteral.cs" />
+    <Compile Include="Scanner\Tokens\Literals\IntLiteral.cs" />
+    <Compile Include="Scanner\Tokens\Literals\RealLiteral.cs" />
+    <Compile Include="Scanner\Tokens\Literals\StringLiteral.cs" />
+    <Compile Include="Scanner\Tokens\Operators.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Add.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Assign.cs" />
+    <Compile Include="Scanner\Tokens\Operators\LessThanOrEqual.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Divide.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Equals.cs" />
+    <Compile Include="Scanner\Tokens\Operators\GreaterThanOrEqual.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Greater.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Less.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Modulo.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Multiply.cs" />
+    <Compile Include="Scanner\Tokens\Operators\NotEquals.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Operator.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Subtract.cs" />
+    <Compile Include="Scanner\Tokens\Other\Colon.cs" />
+    <Compile Include="Scanner\Tokens\Other\Comma.cs" />
+    <Compile Include="Scanner\Tokens\Other\BOF.cs" />
+    <Compile Include="Scanner\Tokens\Other\SquareBrackets.cs" />
+    <Compile Include="Scanner\Tokens\Operators\Not.cs" />
+    <Compile Include="Scanner\Tokens\Other\LeftAngleBracket.cs" />
+    <Compile Include="Scanner\Tokens\Other\LeftBracket.cs" />
+    <Compile Include="Scanner\Tokens\Other\LeftParenthesis.cs" />
+    <Compile Include="Scanner\Tokens\Other\Period.cs" />
+    <Compile Include="Scanner\Tokens\Other\RightAngleBracket.cs" />
+    <Compile Include="Scanner\Tokens\Other\RightBracket.cs" />
+    <Compile Include="Scanner\Tokens\Other\RightParenthesis.cs" />
+    <Compile Include="Scanner\Tokens\Other\Semicolon.cs" />
+    <Compile Include="Scanner\Tokens\Other\Star.cs" />
+    <Compile Include="Scanner\Tokens\Stream\EOF.cs" />
+    <Compile Include="Scanner\Tokens\Stream\EOL.cs" />
+    <Compile Include="Scanner\Tokens\Token.cs" />
+    <Compile Include="Scanner\Tokens\Tokens.cs" />
+    <Compile Include="CodeXMLGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

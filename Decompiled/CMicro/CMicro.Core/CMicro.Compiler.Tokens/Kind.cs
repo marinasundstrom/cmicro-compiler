@@ -1,0 +1,42 @@
+namespace CMicro.Compiler.Tokens
+{
+	public enum Kind
+	{
+		Identifier,
+		Keyword,
+		StringLiteral,
+		CharLiteral,
+		IntLiteral,
+		RealLiteral,
+		Operator,
+		Delimiter,
+		LeftParenthesis,
+		RightParenthesis,
+		LeftBracket,
+		RightBracket,
+		LeftAngleBracket,
+		RightAngleBracket,
+		LeftSquareBracket,
+		RightSquareBracket,
+		Comment,
+		Other,
+		EOL,
+		EOF,
+		Add,
+		Subtract,
+		Multiply,
+		Divide,
+		Equals,
+		NotEquals,
+		Not,
+		Less,
+		LessThanOrEqual,
+		Greater,
+		GreaterThanOrEqual,
+		Modulo,
+		Assign,
+		Lambda,
+		OR,
+		AND
+	}
+}
