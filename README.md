@@ -18,7 +18,7 @@ You maye also want to check out my [Visual Basic Lite compiler](https://github.c
 
 Some thoughts about the code. More to be added.
 
-### To heavy on strings
+### Too heavy on strings
 
 I declare a lot of strings in code, and I also manipulate strings. Often ending up with the same resulting string but as new object. That leads to sometimes unnecessary allocations.
 
@@ -26,7 +26,7 @@ Remember that Miguel de Icaza once spoke about their Mono C# compiler, and how t
 
 The modern Rolsyn C# compiler is far more efficient is this regard.
 
-### AST
+### Abstract Syntax Tree
 
 I could have decoded more in the AST. The design is not optimal but at least something.
 
