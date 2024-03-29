@@ -18,15 +18,31 @@ You maye also want to check out my [Visual Basic Lite compiler](https://github.c
 
 Some thoughts about the code. More to be added.
 
+### To heavy on strings
+
+I declare a lot of strings in code, and I also manipulate strings. Often ending up with the same resulting string but as new object. That leads to sometimes unnecessary allocations.
+
+Remember that Miguel de Icaza once spoke about their Mono C# compiler, and how they didn't deal with string allocations. So they shiftet to re-using strings from a pool - "interning".
+
+The modern Rolsyn C# compiler is far more efficient is this regard.
+
+### AST
+
+I could have decoded more in the AST. The design is not optimal but at least something.
+
 ### Parsing expressions
 
 I think I implemented the [Shunting yard algorithm](https://en.wikipedia.org/wiki/Shunting_yard_algorithm) for parsing operator precedence in binary expressions.
 
 In later compilers, I implemented a [Operator-precedence parser](https://en.wikipedia.org/wiki/Operator-precedence_parser) that was based on the source code for IronPython. Though I didn't know the name back then.
 
-### Overused of interfaces
+### Overuse of interfaces
 
-In this project, I use interfaces without reason or understanding why. Not every class needs an interface.
+In this project, I use interfaces without reason or understanding why. Not every class needs an interface, unless you need it - mainly for testing.
+
+### Lack of unit tests
+
+There are no unit tests. :(
 
 ## Repository
 
