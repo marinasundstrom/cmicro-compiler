@@ -4,7 +4,9 @@ Compiler school project 2008-2009.
 
 My first ever compiler. Written in C#/.NET. Originally for .NET Framework but ported to .NET 9.
 
-The program is compiling "example.cm" into "output.exe". 
+The program is compiling "example.cm" into "output.exe".
+
+Check the version in the "Decompiled" folder. Description further down.
 
 ## Purpose
 
