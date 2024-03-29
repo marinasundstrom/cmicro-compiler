@@ -1,0 +1,167 @@
+:::: Cµ Grammar ::::
+-------------------------------------------------------------------------------------------------------
+
+
+: Types:
+
+int | double | bool | char | string | void | handle | <defined>
+
+
+::: Statement :::
+
+	<statement>;
+
+
+Example:
+
+	foobar = foo + bar;
+
+
+::: Variable declaration :::
+
+//Typed
+//Safe object with a set type.
+
+	[global] <type> <name>
+
+
+Example:
+
+		   int x
+	global int x 
+
+
+//Untyped (Object or boxed)
+//Neutral object that has to be carefully handled.
+
+	[global] var <name>
+
+
+::: Assignment:::
+
+	<variable> = <expression>
+
+
+Example:
+
+	a = b + c
+
+
+::: Function declaration :::
+
+	<returntype> <name> ( <parameters> ) {
+		<body>
+	}
+
+
+Example:
+
+	string foo(string x) {
+		return x;
+	}
+
+
+::: Array accessor :::
+//Access one-dimensional arrays and get values.
+//Assignment does not work yet.
+
+	<name> '['<index>']'
+
+
+Example:
+
+	ar[20]
+
+
+::: Return-statement :::
+
+	return <expression>;
+
+
+Example:
+
+	return 1;
+
+
+::: Function call :::
+
+	<name> ( <arguments> )
+
+
+Example:
+
+	foo(2);
+
+
+::: Structure declaration :::
+Can be created but not yet be consumed.
+
+	struct <name> {
+		<field>
+	}[;]
+
+
+Example:
+
+	struct Person {
+		string Name;
+		int Age;
+	};
+
+
+::: Structure field :::
+
+	<type> <name>;
+
+
+Example:
+
+	int x;
+
+
+::: Enum declaration :::
+Can be created but not yet be consumed.
+
+	enum <name> {
+		<name>[, <name>]
+	}[;]
+
+
+Example:
+
+	enum Status {
+		ONLINE, OFFLINE
+	};
+
+
+
+::: While-statement :::
+
+	while(<expression>) {
+		<statements>
+	}
+
+
+Example:
+
+	while(true) {
+		...
+	}
+
+
+::: If-statement :::
+
+	if(<expression>) {
+		<statements>
+	} else {
+		<statements>
+	}
+
+
+Example:
+
+	if(true) {
+		...
+	} else {
+		...
+	}

@@ -31,7 +31,7 @@ Summary of changes:
 * Removal of use of AppDomains when generating assemblies with IL bytecode - AppDomain do no longer exist in modern .NET.
 * Changes to the use of threading. It was used in an unnecessary and even inappropriate way.
 
-### Debug
+### Compiled
 
 Contains the executables from which the files in Decompiled are derived. 
 
