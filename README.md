@@ -26,11 +26,21 @@ Remember that Miguel de Icaza once spoke about their Mono C# compiler, and how t
 
 The modern Rolsyn C# compiler is far more efficient is this regard.
 
-### Abstract Syntax Tree
+### Lexer
+
+#### Tokens
+
+One class per actual token is bad if you allocate a lot of instances. 
+
+You should use structs, which I have in later projects. That way the objects are copied but short-lived since they are not subject to Garabage Collection (GC).
+
+### Parser
+
+#### Abstract Syntax Tree
 
 I could have decoded more in the AST. The design is not optimal but at least something.
 
-### Parsing expressions
+#### Parsing expressions
 
 I think I implemented the [Shunting yard algorithm](https://en.wikipedia.org/wiki/Shunting_yard_algorithm) for parsing operator precedence in binary expressions.
 
