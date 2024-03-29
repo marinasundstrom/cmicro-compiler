@@ -14,7 +14,21 @@ The up-to-date source code was not available, so had to de-compile. Thus it does
 
 You maye also want to check out my [Visual Basic Lite compiler](https://github.com/marinasundstrom/vb-lite-compiler), from 2 years after this when I was at university.
 
-## Structure
+## When looking back
+
+Some thoughts about the code. More to be added.
+
+### Parsing expressions
+
+I think I implemented the [Shunting yard algorithm](https://en.wikipedia.org/wiki/Shunting_yard_algorithm) for parsing operator precedence in binary expressions.
+
+In later compilers, I implemented a [Operator-precedence parser](https://en.wikipedia.org/wiki/Operator-precedence_parser) that was based on the source code for IronPython. Though I didn't know the name back then.
+
+### Overused of interfaces
+
+In this project, I use interfaces without reason or understanding why. Not every class needs an interface.
+
+## Repository
 
 ### Decompiled
 
