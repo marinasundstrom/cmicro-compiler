@@ -20,6 +20,14 @@ You maye also want to check out my [Visual Basic Lite compiler](https://github.c
 
 Some thoughts about the code. More to be added.
 
+### Initial inspiration
+
+During this project I did a lot of research and looked for examples in many places.
+
+I was primarily inspired by the ["Good for nothing compiler"](https://learn.microsoft.com/en-us/archive/msdn-magazine/2008/february/create-a-language-compiler-for-the-net-framework-using-csharp) (MSDN article) [Source](https://github.com/johandanforth/good-for-nothing-compiler).
+
+Then, I added my own flare to it.
+
 ### Too heavy on strings
 
 I declare a lot of strings in code, and I also manipulate strings. Often ending up with the same resulting string but as new object. That leads to sometimes unnecessary allocations.
