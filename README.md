@@ -77,9 +77,16 @@ Minor changes to deal with the fact that we jumped from .NET Framework to .NET 9
 I have left comments in places where this applies.
 
 Summary of changes:
+
 * Had to deal with the changes to the Reflection Emit APIs.
-* Removal of use of AppDomains when generating assemblies with IL bytecode - AppDomain do no longer exist in modern .NET.
+* Removal of use of AppDomains when generating assemblies with IL bytecode - The concept of an AppDomain is no longer valid in modern .NET.
 * Changes to the use of threading. It was used in an unnecessary and even inappropriate way.
+
+#### .NET 9
+
+The next version of .NET (version 9) will add some important Refections.Emit APIs (back) so you can persist the generated Assembly and IL to the harddrive. This was previously not possible with .NET Core itself.
+
+That is why the preview is being used here.
 
 ### Compiled
 
