@@ -32,7 +32,7 @@ Then, I added my own flare to it.
 
 I declare a lot of strings in code, and I also manipulate strings. Often ending up with the same resulting string but as new object. That leads to sometimes unnecessary allocations.
 
-Remember that Miguel de Icaza once spoke about their Mono C# compiler, and how they didn't deal with string allocations. So they shiftet to re-using strings from a pool - "interning".
+Remember that someone once spoke about their compiler, and how they didn't deal with string allocations. So they shiftet to re-using strings from a pool - "interning".
 
 The modern Rolsyn C# compiler is far more efficient is this regard.
 
